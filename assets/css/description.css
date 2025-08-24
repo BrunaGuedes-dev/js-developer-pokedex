@@ -1,0 +1,231 @@
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+#pokemon-container{
+    width: 97%;
+    height: auto;
+    margin: 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-items: center;
+    background-color:lightgray;
+    
+}
+.pokemon-detail{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template:   
+    "return . . ."0.7fr
+    "name name . number"0.7fr
+    "types types . ." 0.5fr
+    ". img img ." auto
+    ". img img ." auto;
+    margin: 0rem;
+    padding: 0rem;
+    border-radius: 1rem;
+    justify-items: center;
+    
+}
+
+.pokemon-detail .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: 1.5rem;
+    grid-area: number;
+}
+
+.pokemon-detail .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: .15rem;
+    grid-area: name;
+    font-size: 2rem;
+}
+h2{font-size: 1.5rem;
+margin: .2rem .2rem}
+.info{
+    display: inline;
+    grid-area: types;
+}
+.pokemon-detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    text-transform: capitalize;
+}
+.stats{list-style: none; text-transform: capitalize;}
+li{font-size: 1rem;}
+.pokemon-detail .types .type {
+    color: #fff;
+    padding: .3rem .5rem;
+    margin: 0rem 0.5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon-detail img {
+    max-width: 70%;
+    grid-area: img;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+    grid-area: return;
+    padding: .3rem 0.05rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #0000002c;
+}
+.tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #888;
+    position: relative;
+}
+.tab.active {
+    color: #333;
+    font-weight: bold;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6c79db;
+}
+
+.content-pane {
+    display: none; 
+}
+
+.content-pane.active {
+    display: block;
+}
+
+.stat-row { display: flex; align-items: center; margin-bottom: 0.5rem; }
+.stat-name { width: 100px; text-transform: capitalize; }
+.stat-value { width: 40px; text-align: right; }
+.stat-bar { flex-grow: 1; background-color: #eee; border-radius: 5px; margin-left: 1rem; }
+.stat-bar .bar { height: 8px; background-color: #6c79db; border-radius: 5px; }
+@media screen and (min-width: 380px) {
+   #pokemon-container{
+    width: 100%;
+    height: 86%;}
+}
+.pokemon-detail{
+    width: 97%;
+    height: 86%;}
+@media screen and (min-width: 576px) {
+   #pokemon-container{
+    width: 100%;
+    height: 66%;}
+}
+.pokemon-detail{
+    width: 97%;
+    height: 66%;}
+@media screen and (min-width: 992px) {
+   #pokemon-container{
+    width: 100%;
+    height: 46%;}
+}
+.pokemon-detail{
+    width: 97%;
+    height: 46%;}
