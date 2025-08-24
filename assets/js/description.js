@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         detailContainerPrimeiro.innerHTML = `
             <article class="pokemon-detail ${mainType}">
-            <a href="/index.html" alt="voltar" class="pagination">
+            <a href="https://brunaguedes-dev.github.io/js-developer-pokedex/" alt="voltar" class="pagination">
                 &#8592
             </a> 
                 <h1 class="name">${pokemonData.name}</h1> 
